@@ -6,6 +6,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <HeaderBar />
+      <View style={styles.iconContainer}>
+      </View>
     </View>
   );
 }
@@ -13,6 +15,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000', // Black background for the app
+    backgroundColor: '#0d0d0d', // Black background for the app
+  },
+  iconContainer: {
+    marginTop: 20, // Add spacing below the HeaderBar
+    alignItems: 'center', // Center the UserIcon horizontally
   },
 });

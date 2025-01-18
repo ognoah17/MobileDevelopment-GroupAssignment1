@@ -1,32 +1,94 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View, Text } from "react-native";
 
 const HeaderBar = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.oval} />
-      <View style={styles.oval} />
-      <View style={styles.oval} />
+      {/* User Icon */}
+      <View style={styles.userIcon}>
+        <Text style={styles.userIconText}>N</Text>
+      </View>
+
+      {/* Buttons */}
+      <View style={[styles.oval, styles.allButton, styles.buttonSpacing]}>
+        <Text style={styles.allButtonText}>All</Text>
+      </View>
+      <View style={[styles.musicButton, styles.buttonSpacing]}>
+        <Text style={styles.otherButtonText}>Music</Text>
+      </View>
+      <View style={[styles.podcastButton, styles.buttonSpacing]}>
+        <Text style={styles.podcastText}>Podcasts</Text>
+      </View>
     </View>
   );
 };
 
-export default HeaderBar; // Correct export name
+export default HeaderBar;
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row', // Arrange ovals horizontally
-    justifyContent: 'space-evenly', // Space them evenly
-    alignItems: 'center', // Center vertically
-    backgroundColor: '#191414', // Background color (Spotify black)
+    flexDirection: "row", // Arrange items horizontally
+    alignItems: "center", // Center items vertically
     height: 80, // Height of the header
-    paddingHorizontal: 20, // Padding on the sides
-    marginTop: 65, // Push down from the top
+    paddingHorizontal: 10, // Padding on the sides
+    marginTop: 65, // Push header down from the top
   },
   oval: {
-    width: 60, // Increase width for long ovals
-    height: 40, // Smaller height for sideways appearance
-    backgroundColor: '#1DB954', // Spotify green
-    borderRadius: 50, // Makes the shape an oval
+    width: 70, // Default width
+    height: 40, // Oval height
+    borderRadius: 50, // Ensures the oval shape
+    justifyContent: "center", // Center text inside
+    alignItems: "center", // Center text inside
+  },
+  allButton: {
+    backgroundColor: "#10cb50", // Spotify green for "All"
+  },
+  allButtonText: {
+    color: "#000000", // Black text for "All"
+    fontSize: 14, // Font size
+    fontWeight: "bold", // Bold font
+  },
+  musicButton: {
+    width: 75, // Slightly longer than the default button
+    height: 40, // Maintain height consistent with other buttons
+    borderRadius: 50, // Ensures oval shape
+    backgroundColor: "#323233", // Dark gray
+    justifyContent: "center", // Center text inside
+    alignItems: "center", // Center text inside
+  },
+  otherButtonText: {
+    color: "#FFFFFF", // White text for "Music"
+    fontSize: 14, // Font size
+    fontWeight: "bold", // Bold font
+  },
+  podcastButton: {
+    width: 100, // Width for podcast button
+    height: 40, // Height for podcast button
+    borderRadius: 50, // Ensures circular/oval shape
+    backgroundColor: "#323233", // Dark gray
+    justifyContent: "center", // Center text inside
+    alignItems: "center", // Center text inside
+  },
+  podcastText: {
+    color: "#FFFFFF", // White text for "Podcasts"
+    fontSize: 12, // Explicitly set font size for "Podcasts"
+    fontWeight: "bold", // Bold font
+  },
+  userIcon: {
+    width: 40, // Circle diameter
+    height: 40, // Circle diameter
+    backgroundColor: "#6A0DAD", // Purple background
+    borderRadius: 30, // Makes the shape a circle
+    justifyContent: "center", // Center text inside
+    alignItems: "center", // Center text inside
+    marginRight: 10, // Space between user icon and first button
+  },
+  userIconText: {
+    color: "#000000", // Black text
+    fontSize: 18, // Font size for the letter
+    fontWeight: "regular", // Regular font
+  },
+  buttonSpacing: {
+    marginHorizontal: 4, // Consistent spacing between buttons
   },
 });
