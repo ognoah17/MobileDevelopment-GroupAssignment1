@@ -11,9 +11,8 @@ export default function App() {
       <StatusBar barStyle="light-content" />
       <HeaderBar />
       <View style={globalStyles.iconContainer}>
-        <RecentShowcase /> {/* Add the RecentShowcase component */}
+        <RecentShowcase />
         <UpcomingRelease />
-        {/* Add additional components like UserIcon here */}
       </View>      
     </View>
   );
