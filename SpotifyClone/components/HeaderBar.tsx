@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
-import { colors as Colors} from "../styles";
+import { colors as Colors } from "../styles";
 
 const HeaderBar = () => {
   return (
