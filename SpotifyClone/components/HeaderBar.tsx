@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     height: 80, // Height of the header
     paddingHorizontal: 10, // Padding on the sides
     marginTop: 45, // Push header down from the top
+    marginBottom: -20,
   },
   oval: {
     width: 70, // Default width
