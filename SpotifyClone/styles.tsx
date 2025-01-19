@@ -5,6 +5,8 @@ const colors = {
   SpotifyBlack: "#0d0d0d",
   textDark: "#000000",
   textLight: "#ffffff",
+  lightGrey: "#333333", // Added missing # for hex color
+  darkGrey: "#292929", // Added missing # for hex color
 };
 
 const globalStyles = StyleSheet.create({
@@ -18,4 +20,4 @@ const globalStyles = StyleSheet.create({
   },
 });
 
-export default globalStyles;
+export { colors, globalStyles }; // Use named exports for both
