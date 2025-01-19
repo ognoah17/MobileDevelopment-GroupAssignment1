@@ -1,7 +1,8 @@
 # **README: Spotify-Like React Native App**
+Noah Jobse - Nic Simard - Jacob Jobse
 
 ## **Project Overview**
-This project is a **Spotify-like mobile application** built using React Native. The app features a header bar with navigation buttons, showcases recently played items, and displays upcoming releases. It is designed with a focus on responsive design, proper layout alignment, and a consistent theme that resembles Spotify's UI.
+This project is a **Spotify mobile application** clone built using React Native. The app features a header bar with navigation buttons, showcases recently played items, and displays upcoming releases. It is designed with a focus on responsive design, proper layout alignment, and a consistent theme that resembles Spotify's UI. It was built for Mobile Application Development SAIT 2025.
 
 ---
 
