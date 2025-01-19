@@ -11,7 +11,7 @@ export default function App() {
       <StatusBar barStyle="light-content" />
       <HeaderBar />
       <View style={globalStyles.iconContainer}>
-        <RecentShowcase /> 
+        <RecentShowcase />
         <UpcomingRelease />
       </View>      
     </View>
