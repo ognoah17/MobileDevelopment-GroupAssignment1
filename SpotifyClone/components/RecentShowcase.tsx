@@ -1,12 +1,29 @@
+// Version Jan.19 2025 19:11 JJ+NJ
 import React from "react";
-import { View, StyleSheet } from "react-native";
-import { colors as Colors, globalStyles } from "../styles";
+import { View, StyleSheet, Image, Text, ImageSourcePropType } from "react-native";
+import { colors as Colors } from "../styles";
 
 const RecentShowcase: React.FC = () => {
+  const data: { text: string; image: ImageSourcePropType }[] = [
+    { text: "productive Work", image: require("../assets/images/productiveWork.png") },
+    { text: "Jazz for Sleep", image: require("../assets/images/jazzForSleep.png") },
+    { text: "Pray for Paris", image: require("../assets/images/prayForParis.png") },
+    { text: "Develop Yourself", image: require("../assets/images/developYourself.png") },
+    { text: "Code Ryan", image: require("../assets/images/codeRyan.png") },
+    { text: "Liked Songs", image: require("../assets/images/likedSongs.png") },
+    { text: "SimpsonWave1995", image: require("../assets/images/simpsonWave1995.png") },
+    { text: "Gaming Lo-Fi Mix", image: require("../assets/images/gamingLoFi.png") },
+  ];
+
   return (
     <View style={styles.container}>
-      {Array.from({ length: 8 }).map((_, index) => (
-        <View key={index} style={styles.box} />
+      {data.map((item, index) => (
+        <View key={index} style={styles.box}>
+          <Image source={item.image} style={styles.image} />
+          <Text style={styles.text} numberOfLines={2}>
+            {item.text}
+          </Text>
+        </View>
       ))}
     </View>
   );
@@ -14,18 +31,35 @@ const RecentShowcase: React.FC = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "row", // Arrange children in a row
-    flexWrap: "wrap", // Allow wrapping to the next line
-    justifyContent: "space-evenly", // Distribute children evenly with space around them
-    alignItems: "center", // Align children vertically in the center
-    padding: 0, // Add padding around the container
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    padding: 0,
   },
   box: {
-    width: "45%", // Set the width of each box to 45% of the container's width
-    height: 55, // Set the height of each box to 55 units
-    backgroundColor: Colors.darkGrey, // Set the background color of each box to green
-    margin: 5, // Add margin around each box
-    borderRadius: 5, // Round the corners with a radius of 10 units
+    width: "45%",
+    height: 55,
+    backgroundColor: Colors.darkGrey,
+    margin: 5,
+    borderRadius: 5,
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 0,
+  },
+  image: {
+    width: 60,
+    height: 55,
+    borderRadius: 5,
+    marginRight: 10,
+  },
+  text: {
+    flex: 1,
+    color: "#fff",
+    fontSize: 14,
+    fontWeight: "bold",
+    textAlign: "left",
+    overflow: "hidden",
   },
 });
 
