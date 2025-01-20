@@ -1,25 +1,27 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import { colors as Colors } from "../styles";
 
 const HeaderBar = () => {
   return (
     <View style={styles.container}>
       {/* User Icon */}
-      <View style={styles.userIcon}>
-        <Text style={styles.userIconText}>N</Text>
-      </View>
+      <TouchableOpacity>
+        <View style={styles.userIcon}>
+          <Text style={styles.userIconText}>N</Text>
+        </View>
+      </TouchableOpacity>
 
       {/* Buttons */}
-      <View style={[styles.oval, styles.allButton, styles.buttonSpacing]}>
+      <TouchableOpacity style={[styles.oval, styles.allButton, styles.buttonSpacing]}>
         <Text style={styles.allButtonText}>All</Text>
-      </View>
-      <View style={[styles.musicButton, styles.buttonSpacing]}>
+      </TouchableOpacity>
+      <TouchableOpacity style={[styles.musicButton, styles.buttonSpacing]}>
         <Text style={styles.musicText}>Music</Text>
-      </View>
-      <View style={[styles.podcastButton, styles.buttonSpacing]}>
+      </TouchableOpacity>
+      <TouchableOpacity style={[styles.podcastButton, styles.buttonSpacing]}>
         <Text style={styles.podcastText}>Podcasts</Text>
-      </View>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -48,7 +50,7 @@ const styles = StyleSheet.create({
   allButtonText: {
     color: Colors.textDark, // Black text for "All"
     fontSize: 14, // Font size
-    fontWeight: "normal", // normal font
+    fontWeight: "bold", // normal font
   },
   musicButton: {
     width: 90, // Slightly longer than the default button
@@ -61,7 +63,7 @@ const styles = StyleSheet.create({
   musicText: {
     color: Colors.textLight, // White text for "Music"
     fontSize: 14, // Font size
-    fontWeight: "normal", // normal font
+    fontWeight: "bold", // normal font
   },
   podcastButton: {
     width: 110, // Width for podcast button
@@ -74,12 +76,12 @@ const styles = StyleSheet.create({
   podcastText: {
     color: Colors.textLight, // White text for "Podcasts"
     fontSize: 14, // Explicitly set font size for "Podcasts"
-    fontWeight: "normal", // normal font
+    fontWeight: "bold", // normal font
   },
   userIcon: {
     width: 35, // Circle diameter
     height: 35, // Circle diameter
-    backgroundColor: "#6A0DAD", // Purple background
+    backgroundColor: "#b29bc9", // Purple background
     borderRadius: 30, // Makes the shape a circle
     justifyContent: "center", // Center text inside
     alignItems: "center", // Center text inside
@@ -87,8 +89,8 @@ const styles = StyleSheet.create({
   },
   userIconText: {
     color: Colors.textDark, // Black text
-    fontSize: 18, // Font size for the letter
-    fontWeight: "normal", // Regular font
+    fontSize: 14, // Font size for the letter
+    fontWeight: "bold", // Regular font
   },
   buttonSpacing: {
     marginHorizontal: 4, // Consistent spacing between buttons

@@ -22,10 +22,10 @@ const UpcomingRelease = () => {
         />
         <View style={styles.columnContainer}>
           <Text style={styles.albumTitle}>Album</Text>
-          <Text style={styles.albumSubtitle}>SHOWBIZ</Text>
-          <Text style={styles.albumSubtitle}>January 30, 2025</Text>
+          <Text style={styles.albumSubtitle}>Showbiz!</Text>
+          <Text style={styles.dateText}>January 30, 2025</Text>
           <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Pre-save</Text>
+            <Text style={styles.buttonText} numberOfLines={1} ellipsizeMode="tail">Pre-save</Text>
             <Text style={styles.plusIcon}> + </Text>
           </TouchableOpacity>
         </View>
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     marginLeft: 15, // Adds spacing to the left
     marginTop: 5, // Adds spacing to the top
     color: "#aaacac", // Sets the text color to grey
-    fontSize: 20, // Sets the font size
+    fontSize: 16, // Sets the font size
     fontWeight: "normal", // Keeps the text weight normal
   },
 
@@ -115,7 +115,18 @@ const styles = StyleSheet.create({
     marginLeft: 15, // Adds spacing to the left
     marginTop: 5, // Adds spacing to the top
     color: "#FFFFFF", // Sets the text color to white
-    fontSize: 14, // Sets the font size
+    fontSize: 15, // Sets the font size
+    flexWrap: "wrap", // Allows the text to wrap to the next line if needed
+    width: 90, // Sets a fixed width for proper wrapping
+    fontWeight: "bold", // Makes the text bold
+  },
+
+  // Styling for the date text
+  dateText: {
+    marginLeft: 15, // Adds spacing to the left
+    marginTop: 5, // Adds spacing to the top
+    color: "#aaacac", // Sets the text color to light grey
+    fontSize: 15, // Sets the font size
     flexWrap: "wrap", // Allows the text to wrap to the next line if needed
     width: 90, // Sets a fixed width for proper wrapping
     fontWeight: "bold", // Makes the text bold
@@ -130,23 +141,32 @@ const styles = StyleSheet.create({
     marginBottom: 10, // Adds spacing below the button
     marginTop: 10, // Adds spacing above the button
     borderRadius: 30, // Rounds the corners of the button
-    flexDirection: "row", // Arranges child elements (text and icon) in a row
+    flexDirection: "row", // Arranges child elements in a row
     justifyContent: "center", // Centers the content horizontally
     alignItems: "center", // Centers the content vertically
+  },
+
+  // Container for the button text and icon
+  textContainer: {
+    flexDirection: "row", // Arranges child elements in a row
+    alignItems: "center", // Centers the content vertically
+    backgroundColor: "blue", // Sets the background color to black
+    width: 90, // Sets a fixed width for the container
   },
 
   // Styling for the button text
   buttonText: {
     fontSize: 12, // Sets the font size
     fontWeight: "bold", // Makes the text bold
-    margin: 5, // Adds spacing around the text
-    color: "#FFFFF", // Sets the text color to white
+    color: "#000000", // Sets the text color to black
+    overflow: "hidden", // Ensures text overflow is hidden
+    maxWidth: 60, // Sets a maximum width for the text
   },
 
   // Styling for the "+" icon in the button
   plusIcon: {
     fontSize: 12, // Sets the font size
     fontWeight: "bold", // Makes the text bold
-    color: "#FFFFF", // Sets the text color to white
+    color: "#000000", // Sets the text color to black
   },
 });

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Image, Text, ImageSourcePropType, Dimensions } from "react-native";
+import { View, StyleSheet, Image, Text, ImageSourcePropType, Dimensions, TouchableOpacity } from "react-native";
 import { colors as Colors } from "../styles";
 
 const RecentShowcase: React.FC = () => {
@@ -17,17 +17,22 @@ const RecentShowcase: React.FC = () => {
   const { width } = Dimensions.get("window");
   const dynamicFontSize = width * 0.04; // Adjust this value as needed
 
+  const handlePress = (text: string) => {
+    console.log(`Pressed: ${text}`);
+    // Add your navigation or other logic here
+  };
+
   return (
     <View style={styles.container}>
       {data.map((item, index) => (
-        <View key={index} style={styles.box}>
+        <TouchableOpacity key={index} style={styles.box} onPress={() => handlePress(item.text)}>
           <Image source={item.image} style={styles.image} />
           <View style={styles.textContainer}>
             <Text style={[styles.text, { fontSize: dynamicFontSize }]} numberOfLines={2}>
               {item.text}
             </Text>
           </View>
-        </View>
+        </TouchableOpacity>
       ))}
     </View>
   );
