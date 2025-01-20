@@ -1,4 +1,3 @@
-// Version Jan.19 2025 19:11 JJ+NJ
 import React from "react";
 import { View, StyleSheet, Image, Text, ImageSourcePropType, Dimensions } from "react-native";
 import { colors as Colors } from "../styles";
