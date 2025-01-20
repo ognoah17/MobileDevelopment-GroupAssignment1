@@ -1,11 +1,10 @@
-// Version Jan.19 2025 19:11 JJ+NJ
 import React from "react";
-import { View, StyleSheet, Image, Text, ImageSourcePropType } from "react-native";
+import { View, StyleSheet, Image, Text, ImageSourcePropType, Dimensions } from "react-native";
 import { colors as Colors } from "../styles";
 
 const RecentShowcase: React.FC = () => {
   const data: { text: string; image: ImageSourcePropType }[] = [
-    { text: "productive Work", image: require("../assets/images/productiveWork.png") },
+    { text: "productive work", image: require("../assets/images/productiveWork.png") },
     { text: "Jazz for Sleep", image: require("../assets/images/jazzForSleep.png") },
     { text: "Pray for Paris", image: require("../assets/images/prayForParis.png") },
     { text: "Develop Yourself", image: require("../assets/images/developYourself.png") },
@@ -15,14 +14,19 @@ const RecentShowcase: React.FC = () => {
     { text: "Gaming Lo-Fi Mix", image: require("../assets/images/gamingLoFi.png") },
   ];
 
+  const { width } = Dimensions.get("window");
+  const dynamicFontSize = width * 0.04; // Adjust this value as needed
+
   return (
     <View style={styles.container}>
       {data.map((item, index) => (
         <View key={index} style={styles.box}>
           <Image source={item.image} style={styles.image} />
-          <Text style={styles.text} numberOfLines={2}>
-            {item.text}
-          </Text>
+          <View style={styles.textContainer}>
+            <Text style={[styles.text, { fontSize: dynamicFontSize }]} numberOfLines={2}>
+              {item.text}
+            </Text>
+          </View>
         </View>
       ))}
     </View>
@@ -51,12 +55,13 @@ const styles = StyleSheet.create({
     width: 60,
     height: 55,
     borderRadius: 5,
-    marginRight: 10,
+  },
+  textContainer: {
+    flex: 1,
+    margin: 5,
   },
   text: {
-    flex: 1,
     color: "#fff",
-    fontSize: 14,
     fontWeight: "bold",
     textAlign: "left",
     overflow: "hidden",
