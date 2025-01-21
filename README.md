@@ -148,3 +148,25 @@ const styles = StyleSheet.create({
   },
 });
 ```
+
+Citations:
+
+Ryan Solomon.(2022).Code Ryan[Spotify Podcast].Retrieved from https://open.spotify.com/show/4mdxC9Ll4dQH4JaWFvQwGH
+
+Brian Jenney.(2021).Develop Yourself[Spotify Podcast].https://open.spotify.com/show/69BHCbRAl6rHT9LlNhFWUy/more-popular-episodes
+
+Spotify.(2024).Gaming Lo-Fi Mix[Spotify Playlist].https://open.spotify.com/playlist/37i9dQZF1EIgwyClzn2a9h
+
+Spotify.(2024).Jazz for Sleep[Spotify Playlist].https://open.spotify.com/playlist/37i9dQZF1DXa1rZf8gLhyz
+
+Spotify.(2025).Liked Songs[Spotify Playlist].https://open.spotify.com/collection/tracks
+
+Michael Jordan Bonema.(2017).MIKE[Spotify Artist].https://open.spotify.com/artist/1wlzPS1hSNrkriIIwLFTmU
+
+Michael Jordan Bonema.(2025).Showbiz![Spotify Album].https://open.spotify.com/prerelease/3khZbOeJfYINUdiddYqwnp
+
+Westside Gunn.(2020).Pray for Paris[Spotify Album].https://open.spotify.com/album/6nfJMRoIjyRwk3ZTHNm0PY
+
+Chill Select.().productive work lofi concentration focus & study music[Spotify Playlist].https://open.spotify.com/playlist/3cnkhyqinMpD5O6f6qh5l4
+
+FrankJavCee.(2016).SimpsonWave1995[Spotify Song].https://open.spotify.com/track/0qqRNnwh86N1XBV94GVgQN
