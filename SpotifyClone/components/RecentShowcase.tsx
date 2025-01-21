@@ -40,36 +40,36 @@ const RecentShowcase: React.FC = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "space-evenly",
-    alignItems: "center",
-    padding: 0,
+    flexDirection: "row", // Arrange items in a row
+    flexWrap: "wrap", // Allow items to wrap to the next line
+    justifyContent: "space-evenly", // Distribute items evenly with space between them
+    alignItems: "center", // Center items vertically
+    padding: 0, // No padding
   },
   box: {
-    width: "45%",
-    height: 55,
-    backgroundColor: Colors.darkGrey,
-    margin: 5,
-    borderRadius: 5,
-    flexDirection: "row",
-    alignItems: "center",
-    paddingHorizontal: 0,
+    width: "45%", // Box width as a percentage of the container
+    height: 55, // Fixed height
+    backgroundColor: Colors.darkGrey, // Background color from the Colors object
+    margin: 5, // Margin around each box
+    borderRadius: 5, // Rounded corners
+    flexDirection: "row", // Arrange children in a row
+    alignItems: "center", // Center children vertically
+    paddingHorizontal: 0, // No horizontal padding
   },
   image: {
-    width: 60,
-    height: 55,
-    borderRadius: 5,
+    width: 60, // Fixed width for the image
+    height: 55, // Fixed height for the image
+    borderRadius: 5, // Rounded corners for the image
   },
   textContainer: {
-    flex: 1,
-    margin: 5,
+    flex: 1, // Take up remaining space
+    margin: 5, // Margin around the text container
   },
   text: {
-    color: "#fff",
-    fontWeight: "bold",
-    textAlign: "left",
-    overflow: "hidden",
+    color: "#fff", // White text color
+    fontWeight: "bold", // Bold text
+    textAlign: "left", // Align text to the left
+    overflow: "hidden", // Hide overflow text
   },
 });
 

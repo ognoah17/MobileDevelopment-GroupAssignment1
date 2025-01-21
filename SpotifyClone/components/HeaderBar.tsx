@@ -32,67 +32,67 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row", // Arrange items horizontally
     alignItems: "center", // Center items vertically
-    height: 80, // Height of the header
-    paddingHorizontal: 10, // Padding on the sides
-    marginTop: 45, // Push header down from the top
-    marginBottom: -20,
+    height: 80, // Set the height of the header
+    paddingHorizontal: 10, // Add horizontal padding
+    marginTop: 45, // Margin from the top
+    marginBottom: -20, // Negative margin at the bottom
   },
   oval: {
-    width: 70, // Default width
-    height: 45, // Oval height
-    borderRadius: 50, // Ensures the oval shape
-    justifyContent: "center", // Center text inside
-    alignItems: "center", // Center text inside
+    width: 70, // Default width for oval buttons
+    height: 45, // Height for oval buttons
+    borderRadius: 50, // Make the button oval
+    justifyContent: "center", // Center content horizontally
+    alignItems: "center", // Center content vertically
   },
   allButton: {
-    backgroundColor: Colors.SpotifyGreen, // Spotify green for "All"
+    backgroundColor: Colors.SpotifyGreen, // Background color for "All" button
   },
   allButtonText: {
-    color: Colors.textDark, // Black text for "All"
-    fontSize: 14, // Font size
-    fontWeight: "bold", // normal font
+    color: Colors.textDark, // Text color for "All" button
+    fontSize: 14, // Font size for "All" button text
+    fontWeight: "bold", // Font weight for "All" button text
   },
   musicButton: {
-    width: 90, // Slightly longer than the default button
-    height: 45, // Maintain height consistent with other buttons
-    borderRadius: 50, // Ensures oval shape
-    backgroundColor: Colors.lightGrey, // Dark gray
-    justifyContent: "center", // Center text inside
-    alignItems: "center", // Center text inside
+    width: 90, // Width for "Music" button
+    height: 45, // Height for "Music" button
+    borderRadius: 50, // Make the button oval
+    backgroundColor: Colors.lightGrey, // Background color for "Music" button
+    justifyContent: "center", // Center content horizontally
+    alignItems: "center", // Center content vertically
   },
   musicText: {
-    color: Colors.textLight, // White text for "Music"
-    fontSize: 14, // Font size
-    fontWeight: "bold", // normal font
+    color: Colors.textLight, // Text color for "Music" button
+    fontSize: 14, // Font size for "Music" button text
+    fontWeight: "bold", // Font weight for "Music" button text
   },
   podcastButton: {
-    width: 110, // Width for podcast button
-    height: 45, // Height for podcast button
-    borderRadius: 50, // Ensures circular/oval shape
-    backgroundColor: Colors.lightGrey, // Dark gray
-    justifyContent: "center", // Center text inside
-    alignItems: "center", // Center text inside
+    width: 110, // Width for "Podcasts" button
+    height: 45, // Height for "Podcasts" button
+    borderRadius: 50, // Make the button oval
+    backgroundColor: Colors.lightGrey, // Background color for "Podcasts" button
+    justifyContent: "center", // Center content horizontally
+    alignItems: "center", // Center content vertically
   },
   podcastText: {
-    color: Colors.textLight, // White text for "Podcasts"
-    fontSize: 14, // Explicitly set font size for "Podcasts"
-    fontWeight: "bold", // normal font
+    color: Colors.textLight, // Text color for "Podcasts" button
+    fontSize: 14, // Font size for "Podcasts" button text
+    fontWeight: "bold", // Font weight for "Podcasts" button text
   },
   userIcon: {
-    width: 35, // Circle diameter
-    height: 35, // Circle diameter
-    backgroundColor: "#b29bc9", // Purple background
-    borderRadius: 30, // Makes the shape a circle
-    justifyContent: "center", // Center text inside
-    alignItems: "center", // Center text inside
-    marginRight: 10, // Space between user icon and first button
+    width: 35, // Diameter for user icon
+    height: 35, // Diameter for user icon
+    backgroundColor: "#b29bc9", // Background color for user icon
+    borderRadius: 30, // Make the icon circular
+    justifyContent: "center", // Center content horizontally
+    alignItems: "center", // Center content vertically
+    marginRight: 10, // Margin to the right of the user icon
   },
   userIconText: {
-    color: Colors.textDark, // Black text
-    fontSize: 14, // Font size for the letter
-    fontWeight: "bold", // Regular font
+    color: Colors.textDark, // Text color for user icon
+    fontSize: 14, // Font size for user icon text
+    fontWeight: "bold", // Font weight for user icon text
   },
   buttonSpacing: {
-    marginHorizontal: 4, // Consistent spacing between buttons
+    marginHorizontal: 4, // Horizontal margin between buttons
   },
 });
